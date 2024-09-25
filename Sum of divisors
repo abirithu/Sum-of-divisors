@@ -1,0 +1,9 @@
+class Solution{
+    static long sumOfDivisors(int N){
+        long totSum=0;
+        for(int i=1;i<=N;i++){
+            totSum+=(long)i*(N/i);
+        }
+        return totSum;
+    }
+}
